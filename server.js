@@ -1,5 +1,6 @@
 // require in dependencies
-var express = require('express');
+var express = require("express");
+var path = require("path")
 
 // calls the express constructor
 var app = express();
@@ -12,8 +13,14 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // requires the server to point to a series of route files
-require("./routing/apiRoutes");
-require("./routing/htmlRoutes");
+
+app.get("/survey" , function(req, res){
+    res.sendFile(path.join(__dirname, "public/survey.html"))
+})
+
+app.get("/", function(req, res){
+    res.send("hello world");
+})
 
 // the server starts listening
 app.listen(PORT, function(){

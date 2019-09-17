@@ -8,6 +8,6 @@ var app = express();
 
 // express get request; app.get(path, callback[callback..])
 exports = app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "survey"));
+    res.sendFile(path.join(__dirname, "survey.html"));
 });
 
