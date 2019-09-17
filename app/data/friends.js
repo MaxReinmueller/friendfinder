@@ -61,7 +61,6 @@ var profiles = [
         "photo": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg",
         "scores": ["2", "3", "2", "2", "2", "2", "2", "2", "2", "2"]
     }, {
-        {
         "name": "Tierra",
         "photo": "https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-1/p100x100/13226866_10209330505360373_207612452669017645_n.jpg?_nc_cat=100&_nc_oc=AQmiMMRTiRGZK-5Ui7xTYOexyfE7J_DWh-R5h3hvx8ehpdmlLvaJl8_yLiXiGxjLn1c&_nc_ht=scontent.fhou1-1.fna&oh=1649180487e8df1286916afa37aab607&oe=5DF5FF61",
         "scores": ["2", "3", "3", "3", "3", "3", "2", "2", "2", "3"]
