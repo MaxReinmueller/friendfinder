@@ -2,16 +2,6 @@
 ![Version](https://img.shields.io/badge/version-1.0.1-brightgreen)
 > Connect with like minded people based on a personality servey.
 
-## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
-
 ## General info
 Fillout the questionare and we will match you with a like minded person!
 
