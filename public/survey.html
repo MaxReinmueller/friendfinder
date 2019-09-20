@@ -16,12 +16,35 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 </head>
 
 <body>
+    <div id="resultsModal" class="modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><strong>Below Is Your New Friend</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="friendName"></h2>
+                    <img id="friendPhoto" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <div class="container">
     <h1>Survey!</h1>
     <hr>
@@ -192,15 +215,15 @@
         ]
       };
 
-      console.log(userInput)
+      var currentUrl = window.location.origin;
 
-      // post the data to the api
-
-      // compare the answers from current user to other users
-
-      // find a match
-
-      // display the match back to the user
+       // post the data to the api and display the match back to the user
+       $.post(currentUrl + "/api/friends ", userInput, function(data) {
+                $("#friendName ").text(data.name);
+                $('#friendPhoto').attr("src", data.photo);
+                $("#resultsModal ").modal('toggle');
+      });
+    
     });
   </script>
 </body>
