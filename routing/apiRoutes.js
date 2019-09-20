@@ -11,4 +11,12 @@ module.exports = function(app) {
 app.get("/api/friends", function(req, res){
     return res.json({ friendsArray })
 });
+
+app.post("/api/friends", function(req, res){
+    var difference = 40;
+    var matchName ='';
+    var matchPhoto = ''
+
+    
+})
 }
