@@ -15,6 +15,3 @@ Fillout the questionare and we will match you with a like minded person!
 
 ## Status
 Project is: _in progress_
-
-## Contact
-Feel free to contact me!
